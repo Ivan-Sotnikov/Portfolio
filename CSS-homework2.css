@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+@import url("https://use.fontawesome.com/releases/v5.6.1/css/all.css");
+body {
+  background-color: rgb(247, 248, 252);
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  width: 520px;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.all-form {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  text-align: left;
+  align-items: flex-end;
+}
+
+.form-wrap {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.comment-text {
+  font-weight: bold;
+  font-size: 80%;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.small-wrap {
+  width: 48%;
+}
+
+.wide-wrap {
+  width: 100%;
+  margin: 0px;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    width: 300px;
+  }
+  .small-wrap {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    width: 900px;
+  }
+  .wide-wrap {
+    width: 48%;
+  }
+  #additionalOptions,
+  #maleRadio {
+    align-self: flex-start;
+  }
+}
+
+.star {
+  color: red;
+}
+
+.text-window {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+.button {
+  padding: 1px 10px;
+  margin: 20px 5px 3px 0px;
+}
+
+.submit-text {
+  width: 100%;
+  font-size: 70%;
+  text-align: start;
+  font-family: inherit;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  background-color: rgb(42, 42, 42);
+  display: block;
+  margin-bottom: 45px;
+}
+
+.footer {
+  position: relative;
+  margin-top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(42, 42, 42);
+  height: 60px;
+}
+
+.radio-text {
+  font-family: inherit;
+  display: inline-block;
+  margin: 0px 0px 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-size: cover;
+  position: relative;
+  top: 0.25em;
+}
+
+input[value="male"] + label::before {
+  background-image: url(icon/male.svg);
+  font-size: 1.3em;
+}
+
+input[value="female"] + label::before {
+  background-image: url(icon/female.svg);
+  font-size: 1.5em;
+  left: 0.15em;
+}
+
+input[value="male"]:checked + label::before {
+  background-image: url(icon/male-check.svg);
+}
+
+input[value="female"]:checked + label::before {
+  background-image: url(icon/female-check.svg);
+}
+
+.checkbox-text {
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-text::before {
+  content: "\e86c ";
+  font-family: Material icons;
+  opacity: 0.5;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.6em;
+  width: 20px;
+}
+
+.checkbox-text:hover::before {
+  font-size: 1em;
+  text-shadow: 0px 0px 3px;
+  filter: brightness(150%);
+}
+
+input[type="checkbox"]:checked + label[class*="checkbox-text"]::before {
+  opacity: 1;
+  font-size: 0.8em;
+}
+
+input[type="checkbox"]:checked + label[class*="checkbox-text"]:hover::before {
+  opacity: 1;
+  font-size: 1em;
+}
+input[type="checkbox"]:disabled + label[class*="checkbox-text"]:hover::before {
+  opacity: 0.5;
+  font-size: 0.6em;
+  text-shadow: none;
+}
+
+.red::before {
+  color: red;
+}
+
+.blue::before {
+  color: blue;
+}
+
+.green::before {
+  color: green;
+}
+.yellow::before {
+  color: yellow;
+}
+
+input[type="checkbox"]:disabled + label[class*="checkbox-text"]::before {
+  filter: grayscale(100%);
+  color: gray;
+  font-size: 0.6em;
+}
+
+input[type="checkbox"]:disabled + label[class*="checkbox-text"] {
+  color: lightgray;
+}
+
+#phone {
+  padding: 0px 35px;
+  margin-top: 3px;
+}
+
+.icon-position-left {
+  position: absolute;
+  left: 5px;
+  bottom: 13px;
+}
+
+.icon-position-right {
+  position: absolute;
+  right: 5px;
+  bottom: 13px;
+}
+
+.form-input:focus,
+.text-window:focus {
+  background-color: rgba(138, 240, 253, 0.1);
+  box-shadow: 0 0 5px rgba(152, 209, 255, 1);
+  transition: 0.2s;
+}
+
+.form-input:hover,
+.text-window:hover {
+  box-shadow: 0 0 5px rgba(152, 209, 255, 1);
+  transition: 0.2s;
+}
+
+#service {
+  appearance: none;
+  background-image: url(icon/arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 5px top 50%;
+  background-size: 2.5em;
+}
+#service:hover {
+  background-size: 3em;
+}
+select {
+  cursor: pointer;
+}

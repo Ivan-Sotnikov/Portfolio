@@ -1,0 +1,159 @@
+body {
+  background-color: ivory;
+}
+.form-label {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightsteelblue;
+  border: 2px solid chartreuse;
+  width: 30%;
+  display: block;
+  position: relative;
+}
+.form-input {
+  padding-left: 25px;
+  height: 25px;
+  top: 0px;
+  display: inline-block;
+  width: 90%;
+}
+.form-icon {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.form-icon2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.form-div {
+  position: relative;
+}
+.for-button {
+  background: lightcoral;
+  position: relative;
+  height: 40px;
+}
+
+.button1 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+
+  visibility: visible;
+}
+.button1:active {
+  visibility: hidden;
+}
+.block {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  background-color: skyblue;
+}
+.elem1,
+.elem2,
+.elem3,
+.elem4 {
+  background-color: cadetblue;
+  width: 48%;
+  border: 1px solid sandybrown;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 100%;
+  background-color: khaki;
+}
+.logo {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: url(icon/chrome-color.svg) center no-repeat;
+  transition: 0.2s;
+}
+.logo_position {
+  width: 80px;
+  background-size: 70% 70%;
+  min-height: 10px;
+  height: 100%;
+}
+.burger {
+  font-size: 40px;
+  color: blue;
+  position:absolute;
+  right: 0px;
+  cursor: pointer;
+}
+.menu {
+  margin-left: 50px;
+  background-color: lawngreen;
+ display: flex;
+ 
+}
+.menu_button {
+  border: 2px solid black;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  display: none;
+}
+  
+.button {
+  background-color: lightblue;
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  border: 1px solid palevioletred;
+  background-color: papayawhip;
+  width: 100%;
+  top: 100%;
+  display: none;
+}
+.dropdown:hover {
+  display: block ;
+}
+.button:hover ~ .dropdown {
+  display: block ;
+
+}
+
+.menu_button:hover {
+  background-color: blueviolet;
+}
+.burger:hover ~ div > .menu_button{
+  display: block;
+  cursor: pointer;
+}
+.menu:hover .menu_button{
+  display: block;
+  cursor: pointer;}
+
+.flex_container{
+  width: 400px;
+  height: 300px;
+  background-color: rgb(174, 0, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.checkbox {
+display: inline;
+}
+.label::after {  
+    content: "e5cf";
+    font-family: material icons;
+    font-size: 20px;
+  }
+
+.checkbox:checked > .hidden {
+  display: block;
+}
+.hidden {
+  border: 2px solid magenta;
+  display:none;
+}

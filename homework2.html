@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ivan Sotnikov" />
+    <meta name="description" content="Hometask from Maks" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS-homework2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main-container">
+      <form name="formContact" id="allForm" class="all-form">
+        <div class="small-wrap">
+          <label for="name" class="comment-text">
+            ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА: <span class="star">*</span>
+          </label>
+          <input
+            id="name"
+            class="form-wrap"
+            type="text"
+            placeholder="Как к вам обращаться?"
+            autofocus
+            required
+          />
+        </div>
+        <div class="small-wrap">
+          <label for="email" class="comment-text">
+            УКАЖИТЕ ВАШ EMAIL: <span class="star">*</span>
+          </label>
+          <input
+            id="email"
+            class="form-wrap"
+            type="text"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="wide-wrap">
+          <label for="phone" class="comment-text">
+            УКАЖИТЕ ВАШ ТЕЛЕФОН: <span class="star">*</span>
+          </label>
+          <div>
+            <input
+              id="phone"
+              class="form-wrap"
+              type="text"
+              placeholder="Номер телефона +7"
+              required
+              pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              maxlength="16"
+            />
+            <i class="material-icons icon-position-left">call</i>
+            <i class="material-icons icon-position-right">call</i>
+          </div>
+        </div>
+        <div class="wide-wrap">
+          <label for="company" class="comment-text"
+            >НАПИШИТЕ, ИЗ КАКОЙ ВЫ КОМПАНИИ:</label
+          >
+          <input
+            id="company"
+            class="form-wrap"
+            type="text"
+            placeholder="Введите название"
+          />
+        </div>
+        <div class="wide-wrap">
+          <label for="site" class="comment-text">УКАЖИТЕ ВАШ САЙТ:</label>
+          <input
+            id="site"
+            class="form-wrap"
+            type="text"
+            placeholder="Адрес вашего сайта"
+          />
+        </div>
+        <div class="wide-wrap">
+          <label for="product" class="comment-text">ПРОДУКТ:</label>
+          <input
+            id="product"
+            class="form-wrap"
+            type="text"
+            placeholder="Телефон"
+          />
+        </div>
+        <div class="wide-wrap">
+          <label for="service" class="comment-text">ВЫБЕРИТЕ УСЛУГУ:</label>
+          <select id="service" class="form-wrap">
+            <option>Услуга не выбрана</option>
+            <option>Услуга выбрана</option>
+          </select>
+        </div>
+        <div class="wide-wrap">
+          <div class="comment-text">УКАЖИТЕ ВАШ ПОЛ:</div>
+          <input id="maleRadio" type="radio" name="male" value="male" checked />
+          <label class="radio-text" for="maleRadio">Мужчина</label>
+          <input id="femaleRadio" type="radio" name="male" value="female" />
+          <label for="femaleRadio" class="radio-text">Женщина</label>
+        </div>
+        <div class="wide-wrap" id="additionalOptions">
+          <div class="comment-text">ВЫБЕРИТЕ ДОПОЛНИТЕЛЬНЫЙ ЦВЕТ:</div>
+          <div>
+            <input
+              type="checkbox"
+              id="checkboxOption1"
+              name="option1"
+              value="red"
+            />
+            <label for="checkboxOption1" class="checkbox-text red"
+              >Красный</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="checkboxOption2"
+              name="option2"
+              value="blue"
+            />
+            <label for="checkboxOption2" class="checkbox-text blue"
+              >Синий</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="checkboxOption3"
+              name="option3"
+              value="green"
+            />
+            <label for="checkboxOption3" class="checkbox-text green"
+              >Зеленый</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="checkboxOption4"
+              name="option4"
+              value="yellow"
+              disabled
+            />
+            <label for="checkboxOption4" class="checkbox-text yellow"
+              >Желтый (нет в наличии)</label
+            >
+          </div>
+        </div>
+        <div class="wide-wrap">
+          <label for="info" class="comment-text">ДОП.ИНФОРМАЦИЯ:</label>
+          <textarea id="info" class="text-window"></textarea>
+        </div>
+        <div class="wide-wrap">
+          <select class="form-wrap">
+            <option>Я Робот</option>
+            <option>Я не Робот</option>
+          </select>
+        </div>
+      </form>
+      <div class="submit-container">
+        <button type="submit" class="button" disabled>Отправить</button>
+        <button type="reset" class="button" form="allForm">Очистить</button>
+        <div class="submit-text">
+          Поля отмеченные звездочкой <span class="star">*</span> являются
+          обязательными для заполнения.
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
