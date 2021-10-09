@@ -84,7 +84,7 @@ body {
 
 .text-window {
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
   border-radius: 5px;
   border: 1px solid lightgray;
   margin-bottom: 20px;
@@ -103,25 +103,8 @@ body {
   font-family: inherit;
 }
 
-.header {
-  height: 60px;
-  width: 100%;
-  position: relative;
-  top: 0px;
-  background-color: rgb(42, 42, 42);
-  display: block;
-  margin-bottom: 45px;
-}
 
-.footer {
-  position: relative;
-  margin-top: 50px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(42, 42, 42);
-  height: 60px;
-}
+
 
 .radio-text {
   font-family: inherit;
@@ -246,7 +229,7 @@ input[type="checkbox"]:disabled + label[class*="checkbox-text"] {
   bottom: 13px;
 }
 
-.form-input:focus,
+.form-wrap:focus,
 .text-window:focus {
   background-color: rgba(138, 240, 253, 0.1);
   box-shadow: 0 0 5px rgba(152, 209, 255, 1);

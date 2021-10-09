@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: aqua;
+ 
 }
 /* -------------------------start header------------------------*/
 .header {
@@ -312,16 +312,6 @@ font-size: 70%;
 /*-----------------------------end MAIN--------------------------*/
 /* мобилка */
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  .device-temp::after {
-    padding-top: 40px;
-    background-color: rgba(rgba(255, 0, 149, 0.5));
-    content: "Мобилка 300px-767px";
-  }
-  body {
-    background-color: royalblue;
-  }
-  
-
   [id*="burger-checkbox"]:checked ~ .header__menu .menu-btn-wrap {
     display: table;
     width: 100%;
@@ -373,15 +363,6 @@ font-size: 70%;
 
 /* Планшет */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-  .device-temp::after {
-    padding-top: 40px;
-    background-color: rgba(rgba(255, 0, 149, 0.5));
-    content: "Планшет 768px-1024px";
-  }
-  body {
-    background-color: yellow;
-  }
-
   .header__menu {
     position: absolute;
     top: 100%;
@@ -423,9 +404,7 @@ font-size: 70%;
 }
 /*PC*/
 @media screen and (min-width: 1025px) {
-  .device-temp::after {
-    content: "PC 1025px+";
-  }
+  
   .menu-btn-wrap {
     display: inline-block;
   }
