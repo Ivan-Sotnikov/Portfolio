@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="author" content="Ivan Sotnikov">
+        <meta name="description" content="Login and registration page" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="CSS-index.css" />
+        <link rel="stylesheet" href="CSS-login-page.css" />
+        <script src="all.js"></script>
+    </head>
+<body>
+    <header class="header header_style">
+        <a href="index.html"><div class="logo logo_position"></div></a>
+        <input type="checkbox" id="burger-checkbox-01"/>
+        <label for="burger-checkbox-01" class="header__burger-menu material-icons">menu</label>
+        <div class="header__menu">        
+        <div class="menu-btn-wrap menu-btn-wrap_style">
+            <input type="checkbox" id="dropdown-checkbox-02"/>
+            <label for="dropdown-checkbox-02" class="btn-link__arrow"></label>
+            <a class="btn-link_style" href="/prod">продукция</a>
+            <div class="menu-btn-wrap__dropdown">
+                <a class="btn-link__dropdown btn-link__dropdown_style" href="/prod1" >продукт 1</a>
+                <a class="btn-link__dropdown btn-link__dropdown_style" href="/prod2">продукт 2</a>
+                <a class="btn-link__dropdown btn-link__dropdown_style" href="/prod2">продукт 3</a>
+            </div>
+        </div>	
+            <div class="menu-btn-wrap menu-btn-wrap_style">
+                <input type="checkbox" id="dropdown-checkbox-03"/>
+                <label for="dropdown-checkbox-03" class="btn-link__arrow"></label>
+                <a class="btn-link_style" href="/servce">услуги</a>
+                <div class="menu-btn-wrap__dropdown">
+                    <a class="btn-link__dropdown btn-link__dropdown_style" href="/service1">услуга 1</a>
+                    <a class="btn-link__dropdown btn-link__dropdown_style" href="/service2">услуга 2</a>
+                    <a class="btn-link__dropdown btn-link__dropdown_style" href="/new_service">новая <br> услуга</a>
+                </div>
+            </div>
+            <div class="menu-btn-wrap menu-btn-wrap_style">
+                <a class="btn-link_style" href="/news">новости</a>
+            </div>
+            <div class="menu-btn-wrap menu-btn-wrap_style">
+                <input type="checkbox" id="dropdown-checkbox-04"/>
+                <label for="dropdown-checkbox-04" class="btn-link__arrow"></label>
+                <a class="btn-link_style" href="/navigation"> навигация</a>
+                <div class="menu-btn-wrap__dropdown">
+                    <a class="btn-link__dropdown btn-link__dropdown_style" href="#road-of-changes">на дороге перемен</a>
+                    <a class="btn-link__dropdown btn-link__dropdown_style" href="#edge-of-space">у самой границы космоса</a>
+                    <a class="btn-link__dropdown btn-link__dropdown_style" href="#article-end">заключение</a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="header__login">
+            <a href="login-page.html" class="header__login_link">
+                <span class="material-icons header__login_icon">account_circle</span>
+                <div class="header__login_text"> войти</div>
+            </a>
+        </div>
+    </div>	
+</header>
+<main>
+    <div class="login-wrap">
+        <form class="login-wrap__exist-user login-wrap__exist-user_style">
+            <div>
+                <label for="username" class="login-wrap__exist-user_label">Имя пользователя</label>
+                <input id="username" type="text" class="login-wrap__exist-user_input"></input>
+            </div>
+            <div>
+                <label for="password" class="login-wrap__exist-user_label"> Пароль</label>
+                <input id="pass" type="password" class="login-wrap__exist-user_input" ></input>
+                <button class="password-visiblity" onclick="password-visibility"> Показать пароль</label>
+                <button onclick="show_hide_password">show</button>
+            </div>
+        </form>
+        
+    </div>
+</main>
+<footer class="footer footer__background">
+    <div class="footer__feedback"><a class="footer__feedback_link" href="feedback.html">
+        Напишите нам!
+    </a> </div>
+    <div class="footer__menu">
+        <a href="#top" class="footer__menu_link" name="asd" >вернуться наверх</a>
+        <span>/</span>
+        <a href="/prod" class="footer__menu_link">продукция</a>
+        <span>/</span>
+        <a href="/service" class="footer__menu_link">услуги</a>
+        <span>/</span>
+        <a href="/news" class="footer__menu_link">новости</a>
+        <span>/</span>
+        <a href="/navigation" class="footer__menu_link">навигация</a>
+        
+        
+    </div>
+    <div class="contact-info contact-info-style">
+        Разработчик макета: Сотников Иван. <br> &#169 Все права защищены. <br> Москва, 2021.
+    </div>
+    </div>
+</footer>

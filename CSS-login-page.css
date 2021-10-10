@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   }
+main{
+    flex-grow: 1;
+    position: relative;
+}
+.login-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
