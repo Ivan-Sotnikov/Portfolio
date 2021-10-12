@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <meta charset="utf-8">
+	 <head>
+    <meta charset="utf-8">
         <meta name="author" content="Ivan Sotnikov">
         <meta name="description" content="Login and registration page" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons"/>
         <link rel="stylesheet" href="CSS-index.css" />
         <link rel="stylesheet" href="CSS-login-page.css" />
-        <script src="all.js"></script>
-    </head>
+        
+        <script src="all.js"></script> 
+    </head> 
 <body>
     <header class="header header_style">
         <a href="index.html"><div class="logo logo_position"></div></a>
@@ -44,9 +46,9 @@
                 <label for="dropdown-checkbox-04" class="btn-link__arrow"></label>
                 <a class="btn-link_style" href="/navigation"> навигация</a>
                 <div class="menu-btn-wrap__dropdown">
-                    <a class="btn-link__dropdown btn-link__dropdown_style" href="#road-of-changes">на дороге перемен</a>
-                    <a class="btn-link__dropdown btn-link__dropdown_style" href="#edge-of-space">у самой границы космоса</a>
-                    <a class="btn-link__dropdown btn-link__dropdown_style" href="#article-end">заключение</a>
+                    <a class="btn-link__dropdown btn-link__dropdown_style" href="index.html#road-of-changes">на дороге перемен</a>
+                    <a class="btn-link__dropdown btn-link__dropdown_style" href="index.html#edge-of-space">у самой границы космоса</a>
+                    <a class="btn-link__dropdown btn-link__dropdown_style" href="index.html#article-end">заключение</a>
                     
                 </div>
                 
@@ -61,19 +63,42 @@
     </div>	
 </header>
 <main>
-    <div class="login-wrap">
-        <form class="login-wrap__exist-user login-wrap__exist-user_style">
-            <div>
-                <label for="username" class="login-wrap__exist-user_label">Имя пользователя</label>
-                <input id="username" type="text" class="login-wrap__exist-user_input"></input>
+    
+    <div class="login-wrap_style">       
+        <div class="login-wrap__hello">
+            Добро пожаловать!
+        </div>
+        <form class="login-wrap__exist-user login-wrap__exist-user_style" >
+            <div class="login-wrap__exist-user_data">
+                <label for="username" class="login-wrap__exist-user_label" >Имя пользователя:</label>
+                <div class="input-wrapper"><input id="username" type="text" class="login-wrap__exist-user_input" placeholder="Логин или Email">
+                <span class="material-icons icon_input-wrap_left">
+                    account_circle
+                    </span></input></div>
+                                </div>
+            <div class="login-wrap__exist-user_data">
+                <label for="password" class="login-wrap__exist-user_label"> Пароль:</label>
+                <div class="input-wrapper"><input id="pass" type="password" class="login-wrap__exist-user_input" placeholder="Ваш пароль">
+                <span class="material-icons icon_input-wrap_left"><span class="material-icons-round">
+                    vpn_key
+                    </span></span></input></div>              
+                <button 
+                type="button" 
+                onclick="password_visibility()" 
+                class="login-wrap__exist-user_button_style material-icons" id="visib-btn">visibility</button>
+                <a href="recover_pass.html" alt="password recovery" class="login-wrap__exist-user_recov-btn login-wrap__exist-user_button_style">Не можете войти?</a>
+                 
             </div>
-            <div>
-                <label for="password" class="login-wrap__exist-user_label"> Пароль</label>
-                <input id="pass" type="password" class="login-wrap__exist-user_input" ></input>
-                <button class="password-visiblity" onclick="password-visibility"> Показать пароль</label>
-                <button onclick="show_hide_password">show</button>
+            <div class="login-wrap__exist-user_data">
+                <button type="submit" id="logIn" class="login-wrap__exist-user_login-btn"> Войти</button>
             </div>
+            <div class="login-wrap__exist-user_data">
+                <button type="button" id="register" class="login-wrap__exist-user_login-btn"><a href="registration.html" class="login-wrap__exist-user_registration"> Регистрация</a></button>
+            </div>
+            
+
         </form>
+         
         
     </div>
 </main>

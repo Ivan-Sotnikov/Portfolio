@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home Page of Test Project</title>
 		<link rel="stylesheet" href="CSS-index.css" />	
+		<script src="all.js" defer></script>
 	
 	</head>
 	<body>
@@ -44,9 +45,9 @@
 						<label for="dropdown-checkbox-04" class="btn-link__arrow"></label>
 						<a class="btn-link_style" href="/navigation"> навигация</a>
 						<div class="menu-btn-wrap__dropdown">
-							<a class="btn-link__dropdown btn-link__dropdown_style" href="#road-of-changes">на дороге перемен</a>
-							<a class="btn-link__dropdown btn-link__dropdown_style" href="#edge-of-space">у самой границы космоса</a>
-							<a class="btn-link__dropdown btn-link__dropdown_style" href="#article-end">заключение</a>
+							<a class="btn-link__dropdown btn-link__dropdown_style" href="index.html#road-of-changes">на дороге перемен</a>
+							<a class="btn-link__dropdown btn-link__dropdown_style" href="index.html#edge-of-space">у самой границы космоса</a>
+							<a class="btn-link__dropdown btn-link__dropdown_style" href="index.html#article-end">заключение</a>
 							
 						</div>
 						
@@ -61,6 +62,22 @@
 			</div>	
 		</header>
 		<main class="main-wrap">
+			<div class="modal-wrap modal-wrap_hidden modal-wrap_style" id="modal_spaceship">
+				<div class="modal-wrap__content">
+					
+						<span class="modal-wrap__content_image"><img src="images/souz_spaceship.jpg" 
+						alt="Космический корабль союз"
+						class="modal-wrap__content_image-style"
+						></span>
+					<span class="modal-wrap__content_text"><b>«Союз» </b>— наименование семейства советских и российских
+						 многоместных транспортных пилотируемых космических кораблей. Разработка базовой модели
+						 корабля началась в 1962 году в ОКБ-1 под руководством С. П. Королёва для советской лунной
+						 программы. Современные «Союзы» позволяют доставлять экипаж до трёх человек на низкую околоземную
+						 орбиту на ракете с тем же названием «Союз». Разработчик и изготовитель кораблей «Союз» — РКК
+						 «Энергия».</span>
+						 <span class="material-icons modal-wrap__content_close" id="modal_spaceship_close">close</span>
+				</div>
+			</div>
 			<div class="parallax">
 				<div class="parallax__layer parallax__layer_back">
 					<img src="background/stars.jpg" alt="background image: space" class="parallax-background-img"/>
@@ -80,9 +97,10 @@
 							  человек, один из которых – Чарльз Симони, глава и основатель 
 							  компании Intentional Software, – дважды.
 							</div>
+							
 							<div class="main-wrap__text-content">
 							Все космические туристические полеты были проведены при 
-							помощи российских космических кораблей «Союз» в период с 2001 
+							помощи российских многоцелевых <span id="spaceship" class="modal-link">космических кораблей «Союз»</span> в период с 2001 
 							по 2009 гг. Эти полеты совершались на Международную космическую
 							 станцию (МКС) и продолжались 10–14 суток. Чаще всего экипажи
 							 на МКС работают по нескольку месяцев, поэтому турист прилетал
@@ -103,6 +121,7 @@
 							билетами.
 							</div>
 						</div>
+						
 						<div>
 							<span id="edge-of-space"></span>
 							<div class="main-wrap__text-abstract" >

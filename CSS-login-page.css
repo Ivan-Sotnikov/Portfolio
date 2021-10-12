@@ -1,19 +1,109 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-   }
-main{
-    flex-grow: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 248, 252);
+}
+.login-wrap_style {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(198, 223, 255);
+  box-shadow: 0 0 3px rgb(198, 223, 255);
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 30%;
+  min-width: 320px;
+  max-width: 800px;
+}
+.login-wrap__hello {
+  width: 100%;
+  text-align: center;
+  font-size: 150%;
+  margin: 20px 0px 50px;
+}
+.login-wrap__exist-user {
+  padding: 10px;
+}
+.login-wrap__exist-user_label {
+  display: block;
+  font-size: 120%;
+  margin-bottom: 5px;
+}
+.login-wrap__exist-user_input {
+    position: relative;
+display: block;
+  height: 40px;
+  min-width: 300;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 30px;
+}
+.input-wrapper{
     position: relative;
 }
-.login-wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+.login-wrap__exist-user_data {
+  margin: 0px 10px 20px;
+  position: relative;
+}
+.login-wrap__exist-user_button_style {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 2px solid lightgray;
+  margin-top: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-wrap__exist-user_button_style:hover {
+  background-color: rgb(198, 223, 255);
+  border-color: darkgrey;
+}
+.login-wrap__exist-user_recov-btn {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+  text-decoration: none;
+  color: black;
+}
+.login-wrap__exist-user_login-btn {
+ 
+  background: rgb(198, 223, 255);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 120%;
+  height: 40px;
+  cursor: pointer;
+  transition: .2s;
+}
+.login-wrap__exist-user_login-btn:hover {
+    filter: brightness(105%) ;
+    
+
+}
+.login-wrap__exist-user_registration{
+    text-decoration: none;
+    color: black;
+}
+
+.icon_input-wrap_left{
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    font-size: 160%;
+}
