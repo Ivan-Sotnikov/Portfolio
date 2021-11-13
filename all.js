@@ -16,14 +16,17 @@ function spaceship_souz() {
   function show_modal() {
     let visibility = document.getElementById("modal_spaceship");
     let close = document.getElementById("modal_spaceship_close");
-	visibility.setAttribute("class",
-    	"modal-wrap modal-wrap_visible modal-wrap_style");
+    visibility.setAttribute(
+      "class",
+      "modal-wrap modal-wrap_visible modal-wrap_style"
+    );
     close.addEventListener("click", close_modal);
-	function close_modal() {
-      visibility.setAttribute("class",
-      "modal-wrap modal-wrap_hidden modal-wrap_style");
-	  event.stopPropagation();
-
+    function close_modal() {
+      visibility.setAttribute(
+        "class",
+        "modal-wrap modal-wrap_hidden modal-wrap_style"
+      );
+      event.stopPropagation();
     }
   }
 }
