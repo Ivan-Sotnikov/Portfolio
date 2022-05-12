@@ -1,4 +1,3 @@
-console.log("JS file is loaded");
 function password_visibility() {
   var input = document.getElementById("pass");
 

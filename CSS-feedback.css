@@ -151,6 +151,8 @@ input[value="female"]:checked + label::before {
 .checkbox-text {
   margin-bottom: 7px;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 input[type="checkbox"] {
@@ -202,6 +204,9 @@ input[type="checkbox"]:disabled + label[class*="checkbox-text"]:hover::before {
 .yellow::before {
   color: yellow;
 }
+.yellow{
+  cursor: default;
+}
 
 input[type="checkbox"]:disabled + label[class*="checkbox-text"]::before {
   filter: grayscale(100%);
@@ -245,6 +250,7 @@ input[type="checkbox"]:disabled + label[class*="checkbox-text"] {
 
 #service {
   appearance: none;
+  -webkit-appearance: none;
   background-image: url(icon/arrow.png);
   background-repeat: no-repeat;
   background-position: right 5px top 50%;

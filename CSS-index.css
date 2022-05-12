@@ -13,7 +13,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  
 }
+
 /* -------------------------start header------------------------*/
 .header {
   position: relative;
@@ -325,6 +327,7 @@ body {
 }
 .parallax-background-img {
   min-height: 200vh;
+  
 }
 .parallax__layer_front {
   transform: translateZ(0px);
@@ -354,6 +357,8 @@ body {
   background-color: mintcream;
   border-radius: 10px;
   box-shadow: 0 0 10px white;
+  box-sizing: border-box;
+  margin-top: 20px ;
 }
 .main-wrap__text-content {
   font-size: 20px;
