@@ -309,7 +309,7 @@ body {
 
 .parallax {
   position: absolute;
-  perspective: 1px;
+  /* perspective: 1px; */
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -323,10 +323,13 @@ body {
   right: 0px;
 }
 .parallax__layer_back {
-  transform: translateZ(-20px) scale(22);
+  /* transform: translateZ(-20px) scale(22); */
+background-image: url(background/stars.jpg);
+background-size: cover;
 }
 .parallax-background-img {
-  min-height: 200vh;
+  
+  
   
 }
 .parallax__layer_front {
